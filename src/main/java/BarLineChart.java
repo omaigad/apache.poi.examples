@@ -80,8 +80,9 @@ public class BarLineChart {
         ctValAx1.addNewAxId().setVal(123457); //id of the val axis
         ctScaling=ctValAx1.addNewScaling();
         ctScaling.addNewOrientation().setVal(STOrientation.MIN_MAX);
-        ctValAx1.addNewDelete().setVal(false);
+        ctValAx1.addNewDelete().setVal(true);
         ctValAx1.addNewAxPos().setVal(STAxPos.L);
+        ctValAx1.addNewMajorTickMark().setVal(org.openxmlformats.schemas.drawingml.x2006.chart.STTickMark.Enum.forInt(4));
         ctValAx1.addNewCrossAx().setVal(123456); //id of the cat axis
         ctValAx1.addNewMinorTickMark().setVal(STTickMark.NONE);
         ctValAx1.addNewTickLblPos().setVal(STTickLblPos.NEXT_TO);
@@ -128,6 +129,7 @@ public class BarLineChart {
         ctValAx.addNewDelete().setVal(false);
         ctValAx.addNewAxPos().setVal(STAxPos.R);
         ctValAx.addNewCrossAx().setVal(1234); //id of the cat axis
+        ctValAx.addNewMajorTickMark().setVal(org.openxmlformats.schemas.drawingml.x2006.chart.STTickMark.Enum.forInt(4));
         ctValAx.addNewMinorTickMark().setVal(STTickMark.NONE);
         ctValAx.addNewTickLblPos().setVal(STTickLblPos.NEXT_TO);
 
